@@ -1,18 +1,15 @@
-import java.util.Scanner;
 public class practice{
-    public static void main (String [] args){
-        Scanner myScanner=new Scanner (System.in);
-        System.out.print("type in a number n");
-        int n=myScanner.nextInt();
-        int sum1=0;
-        int sum=0;
-for( int i=1; i==n; i++){
-sum+=1/n;
+public static void main (String [] args){
+      int a=3;
+      int b=6;
+      int sum=1;
+
+for(int i=0; i<(b-a+1); i++){
+
+sum=sum*(a+i);
+
 }
-for( int i=n; i==1; i--){
-sum1+=1/n;
+
+System.out.println(""+sum+"");
 }
-int difference=sum-sum1;
-System.out.println(""+difference+"");
-    }
 }
