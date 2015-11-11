@@ -1,24 +1,14 @@
 import java.util.Scanner;
 public class Check{
     public static void main (String [] args){
-        
-Scanner myScanner= new Scanner (System.in);
-System.out.print("Enter the original cost of the check in the from xx.xx?");
-double checkCost=myScanner.nextDouble();
-System.out.print("Ente the percentage tip that you wish to pay as a whole number (in the form xx) :");
-double tipPercent=myScanner.nextDouble();
-tipPercent/=100;// we want to convert the persent to a value
-System.out.print("Enter the number of people who went out to dinner : ");
-int numPeople=myScanner.nextInt();
-double totalCost;
-double costPerPerson;
-int dollars, dimes, pennies;
-totalCost= checkCost*(1+tipPercent);
-
-costPerPerson=totalCost/numPeople;
-dollars=(int)costPerPerson;
-dimes= (int) (costPerPerson*10)%10;
-pennies=(int) (costPerPerson*100)%10;
-System.out.println("Each person in the group owes $ " + dollars + '.'+dimes +pennies);
-}
+      int[] a = {10,8,3,-4,0,1,100,50,22,-5};
+      
+      for (int i=1; i<6; i++){ 
+    for (int j=i; (j>0 && (a[j] < a[j-1])); j--){
+      int tmp = a[j];
+      a[j]=a[j-1];
+      a[j-1]=tmp;
+    }
+  }
+    }
 }
